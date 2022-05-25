@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="Linqdb.Uwp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Linqdb.Uwp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel Spacing="4">
+        <Button Command="{x:Bind ViewModel.AddCommand}"
+                Content="Add" />
+
+        <Button Command="{x:Bind ViewModel.Single1Command}"
+                Content="Single1" />
+
+        <Button Command="{x:Bind ViewModel.Single2Command}"
+                Content="Single2" />
+
+        <Button Command="{x:Bind ViewModel.Single3Command}"
+                Content="Single3" />
+
+        <TextBlock Text="{x:Bind ViewModel.Text, Mode=OneWay}" />
+    </StackPanel>
+</Page>
