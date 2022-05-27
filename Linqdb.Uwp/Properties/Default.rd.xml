@@ -18,6 +18,9 @@
 <Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">
 	<Application>
 		<Assembly Name="*Application*" Dynamic="Required All" />
+		<Type Name="LinqToDB.SqlQuery.SqlTable" DoNotOptimize="true" DoNotInline="true"/>
+		
+		<!--<Type Name="LinqToDB.SqlQuery.SqlTable" Dynamic="Required All"/>-->
 		
 		<!--LinqToDB.ILoadWithQueryable<Linqdb.Uwp.UserBook, Linqdb.Uwp.Book="">-->
 		<!--LinqToDB.LinqExtensions.LoadWith<Linqdb.Uwp.UserBook, Linqdb.Uwp.Book="">-->
